@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>@yield('title', 'Treda Solutions')</title>
+    <style>
+        .active a {
+            color:red;
+            text-decoration: none,
+        }
+    </style>
 </head>
 <body>
     <h1>Bienvenido</h1>
-    <nav>
-        <ul>
-            <li><a href="/"></a>welcome</a></li>
-            <li><a href="/about"></a>home</a></li>
-            <li><a href="/contac"></a>contac</a></li>
-        </ul>
-    </nav>
+    @include('Parciales.nan')
     @yield('content')
 </body>
 </html>
